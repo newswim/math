@@ -15,8 +15,12 @@ IQR(airquality$Wind)
 var(cars$dist)
 sd(cars$speed)
 
-# quantiles, z-scores
+# percentiles, quartiles, z-scores
+# explanation @ http://stattrek.com/descriptive-statistics/measures-of-position.aspx?Tutorial=AP
 quantile(cars$speed)
 quantile(cars$speed, c(.12, .25, .78, .97))
 scale(cars$speed, center = TRUE, scale = TRUE)
+
+# discrete probability distributions
+# explanation @ https://www.youtube.com/playlist?list=PLvxOuBpazmsNIHP5cz37oOPZx0JKyNszN
 
