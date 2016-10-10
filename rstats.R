@@ -21,6 +21,11 @@ quantile(cars$speed)
 quantile(cars$speed, c(.12, .25, .78, .97))
 scale(cars$speed, center = TRUE, scale = TRUE)
 
-# discrete probability distributions
+***
+
+# introduction to discrete random variables and discrete probability distributions
 # explanation @ https://www.youtube.com/playlist?list=PLvxOuBpazmsNIHP5cz37oOPZx0JKyNszN
 
+*** 
+  
+# 
