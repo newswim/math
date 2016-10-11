@@ -43,10 +43,16 @@ wtd.var(x = X, weights = p, normwt = TRUE) # install.packages("Hmisc")
 
 # binomial distribution
 # explanation @ https://www.youtube.com/watch?v=qIzC1-9PwQo&index=4&list=PLvxOuBpazmsNIHP5cz37oOPZx0JKyNszN&spfreload=5
-dbinom(4, size = 12, prob = 0.2) # where x = n successes, size = n of trials, prob = probability of success
-pbinom(4, size = 12, prob = 0.2, lower.tail = TRUE) # where lower.tail = TRUE <- probability of having n or less successes
-pbinom(4, size = 12, prob = 0.2, lower.tail = FALSE) # where lower.tail = FALSE <- probability of having n or more successes
-qbinom(.9, size = 12, prob = 0.2) # where x = quantile (90th percentile in this example)
+dbinom(4, size = 12, prob = 0.2) 
+pbinom(4, size = 12, prob = 0.2, lower.tail = TRUE) 
+pbinom(4, size = 12, prob = 0.2, lower.tail = FALSE) 
+qbinom(.9, size = 12, prob = 0.2) # find quartiles (90th percentile in this example)
+
+# x = number of successes
+# size = number of trials
+# prob = probability of success
+# lower.tail = TRUE if P[X ≤ x] successes
+# lower.tail = FALSE if P[X > x] successes
 
 # the mean of a random binomial variable :: mu = np 
 # variance of a random binomial variable :: sigma^2 = np(1-p)
@@ -55,16 +61,29 @@ qbinom(.9, size = 12, prob = 0.2) # where x = quantile (90th percentile in this 
 # hypergeometric distribution
 # explanation @ https://www.youtube.com/watch?v=BCeFgnh6A1U
 phyper(x, m, n, k, p, lower.tail = TRUE) 
-phyper(x, m, n, k, p, lower.tail = FALSE) # if probabilities are P[X > x]
+phyper(x, m, n, k, p, lower.tail = FALSE) 
 
 # x = number of white balls drawn without replacement from an urn containing both black and white balls
 # m = the number of white balls in the urn
 # n = the number of black balls in the urn
 # k = the number of balls drawn from the urn (sample)
 # p = the given probability, between 0 and 1
+# lower.tail = TRUE if P[X ≤ x] successes
+# lower.tail = FALSE if P[X > x] successes
+
+# geometric distribution
+# explanation @ https://www.youtube.com/watch?v=zq9Oz82iHf0&index=6&list=PLvxOuBpazmsNIHP5cz37oOPZx0JKyNszN
+dgeom(x, prob, log = FALSE)
+pgeom(q, prob, lower.tail = TRUE)
+pgeom(q, prob, lower.tail = FALSE)
+qgeom(p, prob, lower.tail = TRUE)
+
+# x = number of failures / trials before success occurs
+# p = probabilities
+# lower.tail = TRUE if P[X ≤ x] failures / trials
+# lower.tail = FALSE if P[X > x] failures / trials
 
 # the mean of a geometric random variable :: mu = 1/p
 # variance of a geometric random variable :: sigma^2 = (1 - p) / p^2
-
-
+# standard deviation of a geometric random variable :: sqrt(sigma^2)
 
