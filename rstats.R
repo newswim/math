@@ -48,3 +48,23 @@ pbinom(4, size = 12, prob = 0.2, lower.tail = TRUE) # where lower.tail = TRUE <-
 pbinom(4, size = 12, prob = 0.2, lower.tail = FALSE) # where lower.tail = FALSE <- probability of having n or more successes
 qbinom(.9, size = 12, prob = 0.2) # where x = quantile (90th percentile in this example)
 
+# the mean of a random binomial variable :: mu = np 
+# variance of a random binomial variable :: sigma^2 = np(1-p)
+# standard deviation of a random binomial variable :: sqrt(sigma squared)
+
+# hypergeometric distribution
+# explanation @ https://www.youtube.com/watch?v=BCeFgnh6A1U
+phyper(x, m, n, k, p, lower.tail = TRUE) 
+phyper(x, m, n, k, p, lower.tail = FALSE) # if probabilities are P[X > x]
+
+# x = number of white balls drawn without replacement from an urn containing both black and white balls
+# m = the number of white balls in the urn
+# n = the number of black balls in the urn
+# k = the number of balls drawn from the urn (sample)
+# p = the given probability, between 0 and 1
+
+# the mean of a geometric random variable :: mu = 1/p
+# variance of a geometric random variable :: sigma^2 = (1 - p) / p^2
+
+
+
