@@ -87,3 +87,16 @@ qgeom(p, prob, lower.tail = TRUE)
 # variance of a geometric random variable :: sigma^2 = (1 - p) / p^2
 # standard deviation of a geometric random variable :: sqrt(sigma^2)
 
+# poisson distribution
+# explanation @ https://www.youtube.com/watch?v=jmqZG6roVqU
+dpois(x, lambda)
+ppois(x, lamba, lower.tail = TRUE)
+ppois(x, lamba, lower.tail = FALSE)
+qpois(p, lamba, lower.tail = F / T)
+# dpois if we want to know probability of getting exactly x
+# ppois if we want to know probability of P[X ≤ x] (lower.tail = TRUE)
+# ppois if we want to know probability of P[X ≥ x] (lower.tail = TRUE)
+
+# the mean of a poisson random variable :: mu = lamba
+# variance of a poisson random variable :: sigma^2 = lamba
+# standard deviation of a poisson random variable :: sqrt(sigma^2)
