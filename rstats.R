@@ -100,3 +100,5 @@ qpois(p, lamba, lower.tail = F / T)
 # the mean of a poisson random variable :: mu = lamba
 # variance of a poisson random variable :: sigma^2 = lamba
 # standard deviation of a poisson random variable :: sqrt(sigma^2)
+
+
