@@ -93,12 +93,33 @@ dpois(x, lambda)
 ppois(x, lamba, lower.tail = TRUE)
 ppois(x, lamba, lower.tail = FALSE)
 qpois(p, lamba, lower.tail = F / T)
+
 # dpois if we want to know probability of getting exactly x
 # ppois if we want to know probability of P[X ≤ x] (lower.tail = TRUE)
-# ppois if we want to know probability of P[X ≥ x] (lower.tail = TRUE)
+# ppois if we want to know probability of P[X ≥ x] (lower.tail = FALSE)
+
+# x = number of occurrencies
+# p = probabilities
+# lamba = mean(s) of occurencies during a specific period
 
 # the mean of a poisson random variable :: mu = lamba
 # variance of a poisson random variable :: sigma^2 = lamba
 # standard deviation of a poisson random variable :: sqrt(sigma^2)
 
+# negative binomial distribution
+# explanation @ https://www.youtube.com/watch?v=BPlmjp2ymxw&list=PLvxOuBpazmsNIHP5cz37oOPZx0JKyNszN&index=11
+dnbinom(x, size, prob, mu)
+pnbinom(x, size, prob, mu, lower.tail = TRUE)
+qnbinom(x, size, prob, mu, lower.tail = TRUE)
 
+# x = number of trials necessary before we get the rth success
+# size = number of successful trials / successes in the experiment
+# prob = probability of success for each trial
+
+# dnbinom if we want to know probability is exactly x
+# pnbinom if we want to know probability P[X ≤ x] (lower.tail = TRUE)
+# pnbinom if we want to know probability P[X ≥ x] (lower.tail = FALSE)
+
+# mean of negative binomial distribution :: mu = r / p   
+# variance of negative binomial distribution :: var = r(1 -p) / p^2
+# standard deviation of negative binomial distribution :: sqrt(sigma^2)
