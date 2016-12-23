@@ -45,3 +45,6 @@ Useful cheat sheets from around the Internet to help make sense of a variety of 
 
 [Hypothesis Testing](https://www.youtube.com/playlist?list=PLvxOuBpazmsNo893xlpXNfMzVpRBjDH67)
 
+## machine learning
+
+[A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
