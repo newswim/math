@@ -1,9 +1,5 @@
 # additional resources
 
-## logistic regression
-
-[stats 101: logistic regression](https://www.youtube.com/watch?v=zAULhNrnuL4)
-
 ## compendium
 
 [what test to use](http://www.ats.ucla.edu/stat/stata/whatstat/whatstat.htm)
